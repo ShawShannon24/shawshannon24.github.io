@@ -1,0 +1,1017 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="更新日志,产品,分析," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;上一篇对知乎日报进行了分析，其中有一部分是根据其更新日志来分析其发展方向的。这次想看看微信的版本更新日志能够看出点什么。对微信这种处在顶端的app分析，并不是现在的我能做的，所以我在此也只是以其更新日志为入口，探究微信的一些重要节点的变化，抛砖引玉。&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;结果发现我还是水平不够，什么都没写出来，也为以后的自己">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从版本更新看微信发展历史">
+<meta property="og:url" content="http://shawshannon24.github.io/2017/04/15/从版本更新看微信发展历史/index.html">
+<meta property="og:site_name" content="Shannon.S' Blog">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;上一篇对知乎日报进行了分析，其中有一部分是根据其更新日志来分析其发展方向的。这次想看看微信的版本更新日志能够看出点什么。对微信这种处在顶端的app分析，并不是现在的我能做的，所以我在此也只是以其更新日志为入口，探究微信的一些重要节点的变化，抛砖引玉。&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;结果发现我还是水平不够，什么都没写出来，也为以后的自己">
+<meta property="og:updated_time" content="2017-05-21T14:42:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="从版本更新看微信发展历史">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;上一篇对知乎日报进行了分析，其中有一部分是根据其更新日志来分析其发展方向的。这次想看看微信的版本更新日志能够看出点什么。对微信这种处在顶端的app分析，并不是现在的我能做的，所以我在此也只是以其更新日志为入口，探究微信的一些重要节点的变化，抛砖引玉。&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;结果发现我还是水平不够，什么都没写出来，也为以后的自己">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6394728721395222000',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shawshannon24.github.io/2017/04/15/从版本更新看微信发展历史/"/>
+
+
+
+
+
+  <title> 从版本更新看微信发展历史 | Shannon.S' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?41fc030db57d5570dd22f78997dc4a7e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Shannon.S' Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">肖香龙的博客。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://shawshannon24.github.io/2017/04/15/从版本更新看微信发展历史/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="肖香龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shannon.S' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                从版本更新看微信发展历史
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-15T16:18:56+08:00">
+                2017-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品文档/" itemprop="url" rel="index">
+                    <span itemprop="name">产品文档</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品文档/体验分析/" itemprop="url" rel="index">
+                    <span itemprop="name">体验分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/15/从版本更新看微信发展历史/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/15/从版本更新看微信发展历史/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&ensp;&ensp;&ensp;&ensp;上一篇对知乎日报进行了分析，其中有一部分是根据其更新日志来分析其发展方向的。这次想看看微信的版本更新日志能够看出点什么。对微信这种处在顶端的app分析，并不是现在的我能做的，所以我在此也只是以其更新日志为入口，探究微信的一些重要节点的变化，抛砖引玉。<br>&ensp;&ensp;&ensp;&ensp;结果发现我还是水平不够，什么都没写出来，也为以后的自己做个比较吧，以后多多进步。<br><a id="more"></a></p>
+<h2 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h2><p>&ensp;&ensp;&ensp;&ensp;首先来看一下微信在其官网上的自我介绍：<br>微信，是一个生活方式<br>超过八亿人使用的手机应用<br>支持发送语音短信、视频、图片和文字<br>可以群聊，仅耗少量流量，适合大部分智能手机<br>&ensp;&ensp;&ensp;&ensp;上面这一段话，可以分为4各部分，定位，地位，最主要功能和可用性强。超过八亿人使用，表明了其江湖地位之高，加入微信就相当于加入世界的大网中；第三句描述了微信最主要最基本的即时通讯功能；第四句话则向大家表明了使用成本低，可用性强；而第一句话表明的是微信的定位，除了在最基本的通讯功能之外，它想成为我们生活中不可或缺的部分，通过它，就可以做我们需要做的各种事。<br>&ensp;&ensp;&ensp;&ensp;一组数据：<br><a href="http://tech.qq.com/a/20161228/018057.htm#p=1" target="_blank" rel="external">2016微信数据报告发布</a>中给出了在16年9月份的时候的数据，日活达到7.68亿，其余各项数据在绝对数据大的情况下也在高速增长，微信真的作为一张大网在影响着大部分的人，正在或者将要影响着大部分人中大部分事情。</p>
+<h2 id="更新日志中的部分节点"><a href="#更新日志中的部分节点" class="headerlink" title="更新日志中的部分节点"></a>更新日志中的部分节点</h2><p>&ensp;&ensp;&ensp;&ensp;微信曾在pc端，网页以及各种不同移动端发布了9个版本，其中以ios和android平台时间最长最为活跃，处在移动互联的时代，下面我将以android平台微信的更新日志为例进行探究。<br>&ensp;&ensp;&ensp;&ensp;android平台上微信从11年1月24日到17年3月30日跨越了六年两个月时间，共发布了55个版本。数据来自<a href="http://weixin.qq.com/cgi-bin/readtemplate?t=weixin_faq_list" target="_blank" rel="external">这里</a>。（我看了我的安卓手机上最后更新的版本，时间和更新内容都和这里写的不一样，并不能认为这里反映了全部的更新变化过程，只是一个参考）</p>
+<h3 id="1-x阶段"><a href="#1-x阶段" class="headerlink" title="1.x阶段"></a>1.x阶段</h3><p>在1.0,1.1,1.2版本的时候，介绍是这样写的：<br>    基于Android平台的腾讯微信服务，带给您全新的消息体验，您可以使用微信<br>    快速收发消息，即时拍照分享，随时随地联系身边的朋友。支持基于Android<br>    平台的手持终端设备。</p>
+<p>发布日期：2011-01-24<br>发布版本：微信1.0 for Android(测试版) 点击下载<br>快速消息：极速轻快的楼层式对话，带给您飞一般的聊天体验。<br>照片分享：可即时拍照或选择相册图片，照片任意发，分享更方便。<br>设置头像：给自己设置个性化头像,让您在好友的微信里看起来更亲切。<br>为了保护您的隐私，微信不会自动扫描和上传您的通讯录。并且不透露信息是否已读，降低收信压力。</p>
+<p>发布日期：2011-03-28<br>发布版本：微信1.1 for Android(测试版)<br>Android 1.1 版本更稳定、更省电、更省流量。<br>此版本增加以下主要功能：<br>1、支持多人会话，方便您在手机上开展小群体讨论。<br>2、与腾讯微博私信互通，您可以在手机上与网页中的微博好友私信联系，如果对方也安装了微信，那么你们就能随时随地交流了。此外还能在私信中发送图片。<br>3、增加通讯录分组，方便您寻找联系人。<br>4、支持通讯录及会话列表搜索，找人更加方便快捷。</p>
+<p>发布日期：2011-04-18<br>发布版本：微信1.2 for Android(测试版)<br>1.2版本增加以下主要功能：<br>1、支持通过验证工作邮箱，自动找到验证过相同工作邮箱的同事。<br>2、发消息的时候，支持插入表情，为您增加了一种表达方式。<br>3、支持添加好友备注，方便您识别好友。<br>4、增加黑名单功能，防止不必要的骚扰。</p>
+<p>&ensp;&ensp;&ensp;&ensp;最早期的1.x版本可以看做是一个阶段，在这个阶段内，微信还只是定位为一个通讯工具，主要提供通讯功能，好友管理功能等，并且通过微博，邮箱等联系，希望能够在早期让大家产生联系，西尹更过的用户来到微信。值得注意的一点：一开始微信就强调了自己不想让用户有过多的信息负担，所以在用户隐私，消息提醒等方面就有所控制。</p>
+<h3 id="2-x阶段"><a href="#2-x阶段" class="headerlink" title="2.x阶段"></a>2.x阶段</h3><p>在这一阶段中间，微信更换了其介绍：<br>    微信是一款手机通信软件，支持通过手机网络发送语音短信、视频、图片和文字，可以单聊及群聊，还能根据地理位置找到附近的人，带给朋友们全新的移动沟通体验。支持ios、Android、塞班等多种平台手机。</p>
+<p>发布日期：2011-05-18<br>发布版本：微信2.0 for Android(语音版)<br>2.0语音版本增加以下主要功能：<br>1、对讲功能: 轻轻按住说话，松开后对方就能收到您的声音，还支持多人对讲。<br>2、QQ邮箱提醒: 能将QQ邮箱收到的新邮件第一时间送到您的手机，并且可以直接浏览邮件的内容。</p>
+<p>发布日期：2011-07-01<br>发布版本：微信2.1 for Android(语音版)<br>2.1版本增加以下主要功能：<br>1、寻找手机通讯录好友：选择启用手机通讯录后，系统会自动帮您找到通讯录里正在使用微信的好友。 开启后，您随时可以选择停用手机通讯录。<br>2、好友验证：当您打开了好友验证设置后，任何人添加您为好友，都必须先向您发送好友验证请求，避免不必要的骚扰。<br>3、好友推荐消息：向您推荐来自您QQ好友和手机通讯录好友，还向您提醒好友验证请求。<br>4、隐私设置：允许设置“是否将我推荐给QQ好友”及“是否可以通过QQ号找到我”。</p>
+<p>发布日期：2011-08-15<br>发布版本：微信2.3 for Android<br>2.3版本增加以下主要功能：<br>1.查看附近的人：微信将会根据您的地理位置找到在您附近同样开启本功能的人，使您轻松找到身边正在使用微信的他们。<br>2.全新的界面：耳目一新的设计，功能划分明确，操作简单易用。<br>3.QQ离线消息：当您的QQ处于离线状态时，微信帮您接收QQ消息，还可以回复文字和语音消息喔。让您时刻保持和QQ好友联系。<br>4.个性签名：可以为自己编辑个性签名，让好友看到最特别的自己。<br>5.手机号注册：支持通过手机号注册微信。<br>6.微博私信消息：统一管理私信消息，微信微博两不误。<br>7.听筒切换：一键切换听筒播放语音，更好地保护你的消息隐私。<br>8.绑定QQ号：方便使用邮箱和手机号注册的朋友绑定自己常用的QQ，和QQ好友保持畅快联系。</p>
+<p>发布日期：2011-08-28<br>发布版本：微信2.4 for Android<br>2.4版本增加以下主要功能：<br>通讯录安全助手：支持将手机通信录安全备份到云端，从此不怕再丢失好友联系电话，换新手机时，也能快速从云端下载通信录。</p>
+<p>&ensp;&ensp;&ensp;&ensp;在2.x版本中，微信增加了语音通信，丰富了通讯场景和满足了更多通讯需求，同时也在不断优化用户体验，使用手机号注册，导入手机通讯录，和qq邮箱，腾讯微博，qq等的联系也不断促使更多的人进入微信。</p>
+<h3 id="3-0-3-1阶段"><a href="#3-0-3-1阶段" class="headerlink" title="3.0-3.1阶段"></a>3.0-3.1阶段</h3><p>发布日期：2011-10-18<br>发布版本：微信3.0 for Android<br>3.0版本增加以下主要功能：<br>摇一摇：支持通过摇一摇手机找到同时也在摇手机的朋友。<br>漂流瓶:支持扔漂流瓶匿名交友。<br>视频信息：支持视频即拍即发，经过压缩处理，即使在移动网络也适合传送，让您随时分享精彩的生活片段。<br>支持繁体中文语言界面，增加港、澳、台、美、日五个地区的用户绑定手机号。<br>增加保存群组到通讯录功能，可以把一个群聊里的所有联系人保存成一个群组，方便与这些人发起消息对话。<br>系统插件可装卸、安装。还能让您自由设置是否显示到通讯录里，让您灵活管理满足不同需求的插件。<br>支持查看好友的大头像。<br>增加插件免打扰功能，设置免打扰后，不再提醒系统插件发来的消息。</p>
+<p>发布日期：2011-11-17<br>发布版本：微信3.1 for Android<br>微信 3.1 版本更新如下：<br>支持英文界面显示。<br>语音记事本功能可支持语音、文字、图片和视频格式，并可以同步到QQ邮箱记事本。<br>通讯录好友的详细资料里显示好友来源。</p>
+<p>&ensp;&ensp;&ensp;&ensp;在这一阶段，增加了视频信息发送功能，并且不断优化通讯功能和体验，优化好友管理功能，设置插件免打扰，保持了减轻信息负担的方向。同时在继续同构更多的方式如摇一摇等增强用户活跃度，吸引更多人来到微信。</p>
+<h3 id="3-5-3-6"><a href="#3-5-3-6" class="headerlink" title="3.5-3.6"></a>3.5-3.6</h3><p>这个阶段，微信的介绍又换了，换了两次：<br>    微信是一款手机通信软件，支持通过手机网络发送语音短信、视频、图片和文字，可以单聊及群聊，还能根据地理位置找到附近的人，带给朋友们全新的移动沟通体验。支持ios、Android、塞班等多种平台手机。微信，不只是个聊天工具！</p>
+<pre><code>微信是一款手机通信软件，支持通过手机网络发送语音短信、视频、图片和文字，可以单聊及群聊，还能根据地理位置找到附近的人，带给朋友们全新的移动沟通体验。支持ios、Android、塞班等多种平台手机。微信，是一个生活方式！
+</code></pre><p>发布日期：2011-12-14<br>发布版本：微信3.5 for Android<br>微信 3.5 版本更新如下：<br>将自己专属二维码分享到微博和社交网站上，收获粉丝们的招呼。<br>支持透明背景的动画表情、emoji表情、自定义表情。<br>进行石头剪子布和扔骰子游戏。<br>自定义对话界面聊天背景。<br>简化注册流程，默认采用短信注册，支持全球超过100个国家的手机用户。</p>
+<p>发布日期：2011-12-31<br>发布版本：微信3.5.1 for Android<br>微信 3.5.1 版本更新如下：<br>摇一摇增加显示历史摇到的人。<br>部分体验优化，聊天背景增加纯色背景，体验更流畅。<br>修改了一些bug，使用更流畅，收发消息更及时。</p>
+<p>发布日期：2012-1-19<br>发布版本：微信3.6 for Android<br>微信 3.6 版本更新如下：<br>群发助手，可以把通知、祝福等消息分别发送给各个好友。<br>取消语音，语音可以重来，祝福更加完美。<br>微博精选，腾讯新闻带给你不一样的阅读体验。<br>祝福有惊喜，彩蛋一触即发<br>支持写邮件，添加附件发邮件。</p>
+<p>&ensp;&ensp;&ensp;&ensp;这个阶段，微信表明自己成为一种生活方式的定位，在功能上面，优化通讯体验和好友管理，增加了二维码分享，培养教育二维码使用意识和习惯并且继续拉新，加入了位置服务，邮件和精选新闻微博等，开始向生活中其他方面发力。</p>
+<h3 id="4-x阶段"><a href="#4-x阶段" class="headerlink" title="4.x阶段"></a>4.x阶段</h3><p>发布日期：2012-5-24<br>发布版本：微信4.0 for Android<br>Android微信 4.0 版本更新如下：<br>你可以拥有一个精美的相册，将生活记录在相册中。<br>支持把照片分享到朋友圈，让所有微信通讯录里的朋友看到，他们还可以对照片评论和赞。<br>微信开放接口，支持从第三方应用向微信通讯录里的朋友分享音乐、新闻、美食、摄影等消息内容。<br>支持图片、视频转发给其他微信朋友。<br>支持对微信朋友发送你当前的地理位置，方便朋友找到你。<br>可以对某个通讯录里的朋友标星标，这样就可以快速在通讯录顶部的星标分组里找到他们了。</p>
+<p>发布日期：2012-8-21<br>发布版本：微信 4.2 for Android<br>Android微信 4.2 版本更新如下：<br>新增视频聊天插件，是时候和朋友面对面了。<br>新增微信网页版，便捷的二维码扫描入口，让你快速进入微信生活。<br>朋友圈新增评论回复功能，发图还能\选择可见范围。<br>全新的微信名片设计，让你更具魅力。</p>
+<p>发布日期：2012-11-1<br>发布版本：微信 4.3 for Android<br>Android微信 4.3 版本更新如下：<br>新增摇一摇传图，你可以将电脑网页上的图片传到手机上，更可以让好友也摇到你的图片你可以通过语音搜索，从通讯录中查找朋友。<br>微信号可以解绑QQ号和手机号码。<br>动画表情可以从网上下载。<br>“扫一扫”可以扫描任何二维码，甚至能识别二维码电子名片，并导入手机通讯录。<br>新增聊天置顶，可把有待办事项的聊天置顶，方便稍后处理。<br>你可以在聊天中滑动查看图片。<br>你可以不查看某人的朋友圈更新，并可以把朋友圈上的私密照片设为公开。</p>
+<p>发布日期：2013-02-06<br>发布版本：微信 4.5 for Android<br>Android微信 4.5 版本更新如下：<br>实时对讲，多人实时语音聊天<br>将正在听的歌曲摇到手机里<br>群聊支持二维码，扫一扫就能加入<br>聊天记录可以迁移到另外的手机上<br>推荐一个有趣的公众号：“语音提醒”<br>语音可以撤销发送<br>可以回复陌生人的打招呼，还能加备注<br>朋友发来的位置可以导航</p>
+<p>&ensp;&ensp;&ensp;&ensp;这个阶段，微信在不断优化通讯功能和体验，减轻信息负担，开启了朋友圈相册，进行通讯之外的社交，继续保持隐私保护，减轻信息负担，同时，开放了接口和增加了扫一扫功能，链接微信和微信外的网页，app和其他各种服务，开启位置导航服务，开始启动微信公众号项目，继续在不断丰富着微信的使用场景</p>
+<h3 id="5-x阶段"><a href="#5-x阶段" class="headerlink" title="5.x阶段"></a>5.x阶段</h3><p>这个阶段的介绍是这样的：<br>    微信，超过3亿人使用，能够通过手机网络给好友发送语音、文字消息、表情、图片和视频，还可以分享照片到朋友圈。通过摇一摇、查看附近的人，你可以认识新的朋友。使用扫一扫，你可以扫描二维码、条码、图书和街景。你还可以在游戏中心玩游戏，使用微信支付，与公众号互动……<br>    微信在 iPhone、Android、Symbian、Windows Phone、BlackBerry 等手机平台上都可以使用，并提供有多种语言界面。</p>
+<pre><code>微信，超过3亿人使用，能够通过手机网络给好友发送语音、文字消息、表情、图片和视频，还可以分享照片到朋友圈。通过摇一摇、查看附近的人，你可以认识新的朋友。使用扫一扫，你可以扫描二维码、条码、图书和街景。可以在游戏中心玩游戏，也可以使用微信支付。与公众号互动，你还能够听明星唱歌、看新闻、设提醒……
+微信在?ihome_whone、Android、Symbian、Windows home_whone、BlackBerry?等手机平台上都可以使用，并提供有多种语言界面。
+</code></pre><p>发布日期：2013-08-09<br>发布版本：微信 5.0 for Android<br>Android微信 5.0 版本更新如下：<br>表情商店，有趣好玩的表情在这里<br>“扫一扫”，可以扫条码、图书和CD封面、街景，还可以翻译英文单词<br>你可以在游戏中心，和朋友们一起玩游戏<br>绑定银行卡，在公众号、扫二维码、App中实现一键支付<br>新增收藏功能，可以收藏聊天、公众号、朋友圈的信息<br>新增添加朋友的方式：“按住添加朋友”<br>自主研发的语音识别技术，可直接在聊天中语音输入<br>订阅号的消息被折叠起来，让你的消息列表更干净<br>左滑可以删除聊天记录，双击左下角“微信”可以定位到最新一条未读消息<br>双击文字消息，可查看全文</p>
+<p>发布日期：2013-11-01<br>发布版本：微信 5.0.3 for Android<br>Android微信 5.0.3 版本更新如下：<br>-可以转发多条聊天记录，或者通过邮件备份。<br>-可以从地点列表中选择一家餐馆或商店，精确发送地理位置。<br>-可以在聊天中选择收藏的内容发送，收藏的文字可编辑。<br>-清理微信存储空间：删除不再需要的文件，减少微信占用的存储空间。</p>
+<p>发布日期：2013-12-23<br>发布版本：微信 5.1 for Android<br>Android微信 5.1 版本更新如下：</p>
+<ul>
+<li>可将有需要的群，人数上限提升为100人。</li>
+<li>飞机大战中，飞机坠毁后有机会复活。</li>
+<li>话费充值时会自动检查，防止输入陌生号码。</li>
+<li>在表情购买界面，长按表情可预览。</li>
+<li>未发出的消息草稿，会显示在聊天列表中。</li>
+</ul>
+<p>发布日期：2014-01-26<br>发布版本：微信 5.2 for Android<br>Android微信 5.2 版本更新如下：</p>
+<ul>
+<li>可以在聊天中查看大家的实时位置，还能一起对讲。</li>
+<li>“我的银行卡”中增加多项生活服务。</li>
+<li>聊天记录也可以搜索到了。</li>
+<li>长按语音消息，可以转换为文字。</li>
+<li>新增“图片墙”，帮你快速回顾聊天中的图片。</li>
+<li>发消息时，会为你推荐已下载的表情，还可以把你喜欢的表情分享给朋友和朋友圈。</li>
+<li>在群聊中被人@到，会收到提醒。</li>
+<li>可以给你的朋友添加更多文字描述和图片备注。</li>
+</ul>
+<p>发布日期：2014-05-16<br>发布版本：微信 5.3 for Android<br>Android微信 5.3 版本更新如下：</p>
+<ul>
+<li>聚会见面，大家输入相同数字可加入同一个群。</li>
+<li>给你的收藏添加标签，可分类查看。</li>
+<li>可将多条聊天消息收藏在一起。</li>
+<li>长按外文消息，可翻译成你的语言。</li>
+<li>发朋友圈时可以创建新的位置信息。</li>
+</ul>
+<p>发布日期：2014-06-27<br>发布版本：微信 5.3.1 for android<br>android 5.3.1 版本更新如下：<br>给朋友添加标签，方便分类和查找。<br>管理“我的钱包”中的零钱，直接支付。<br>在“我的钱包”中可以向你的朋友转账。<br>可以撤回两分钟内发出的最后一条消息。</p>
+<p>发布日期：2014-08-28<br>发布版本：微信 5.4 for Android<br>android 5.4 版本更新如下：<br>现在除了搜索联系人和聊天记录，还可以搜索公众号、公众号文章、收藏、微信功能了。<br>查看图片时，可以识别图中的二维码。<br>面对面收钱：通过二维码给身边的人转账。</p>
+<p>&ensp;&ensp;&ensp;&ensp;这个阶段，微信在坚持少信息负担，保护隐私的情况下接着不断完善通讯功能和提高体验，丰富通讯玩法，同时将微信支付引入，并完善各种生活服务，结合通过扫一扫，可以连接整个外部世界。</p>
+<h3 id="6-x阶段"><a href="#6-x阶段" class="headerlink" title="6.x阶段"></a>6.x阶段</h3><p>由于这篇文章已经很长了，所以我就只在这里放上来我觉得重要的部分，按照时间从前向后的顺序排列</p>
+<p>微信小视频：在聊天或朋友圈拍摄一段小视频，让朋友们看见你眼前的世界。<br>可以通过附件栏发微信红包了<br>支持记步的手机，关注“微信运动”公众号，和好友pk运动成就，分享运动快乐<br>表情商店加入更多艺术家的投稿作品<br>投稿表情里可以给艺术家发红包<br>Android Wear 也可以收红包<br>可以使用Android Wear 手表给商家付款<br>群聊里也可以收钱了。</p>
+<p>&ensp;&ensp;&ensp;&ensp;奇怪的是，后面有很多都没有提到，比如最明显的微信小程序。这一阶段，结合我们自己的感受（比如加上微信小程序等改变），可以明显感觉到微信提供的生活服务越来越多，和外部世界的链接也越来越广，你几乎可以用微信做你生活中想做的任何事，微信，成为一种生活方式。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>&ensp;&ensp;&ensp;&ensp;其实写道这里我都不知道要总结啥了，还是现在写不了有深度观点清晰完善的文章。试着说几句。<br>&ensp;&ensp;&ensp;&ensp;微信在一开始确实以通讯功能为基础，在最初的几个版本中，在不断的完善通讯功能和通讯体验，通过各种活动，更重平台各种方式拉近用户，同时也坚持了自己保护隐私，减轻信息负担的方向。后来随着移动互联的发展，技术的进步，用户已是和习惯的养成，也是在微信用户基础培养起来之后，在移动端，微信开始尝试为用户提供更多的服务，不断的丰富使用场景，例如扫一扫，微信支付，导航等，并且在鼓励自己的用户不断的参与到微信的发展中来，比如红包打赏，各种形式的微信公众号等；再后来，最近的小程序，微信已经不满足自己所能提供的有限服务场景了，通过小程序，通过自己庞大的用户，所有线上的服务，信息都接入到微信中，真正实现作为一种生活方式，覆盖生活中使用场景。而现在的各种资源都已经形成了相辅相成。作为微信这种级别的应用，会向马太效应中的越好的越好，和其他的距离越来越大发展。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/更新日志/" rel="tag"># 更新日志</a>
+          
+            <a href="/tags/产品/" rel="tag"># 产品</a>
+          
+            <a href="/tags/分析/" rel="tag"># 分析</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/09/知乎日报体验分析/" rel="next" title="知乎日报体验分析">
+                <i class="fa fa-chevron-left"></i> 知乎日报体验分析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/06/实习收获一/" rel="prev" title="实习收获一">
+                实习收获一 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/15/从版本更新看微信发展历史/"
+           data-title="从版本更新看微信发展历史" data-url="http://shawshannon24.github.io/2017/04/15/从版本更新看微信发展历史/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="肖香龙" />
+          <p class="site-author-name" itemprop="name">肖香龙</p>
+           
+              <p class="site-description motion-element" itemprop="description">我的征途是星辰大海。能安稳闲乐更好。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概况"><span class="nav-number">1.</span> <span class="nav-text">概况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新日志中的部分节点"><span class="nav-number">2.</span> <span class="nav-text">更新日志中的部分节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-x阶段"><span class="nav-number">2.1.</span> <span class="nav-text">1.x阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-x阶段"><span class="nav-number">2.2.</span> <span class="nav-text">2.x阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-0-3-1阶段"><span class="nav-number">2.3.</span> <span class="nav-text">3.0-3.1阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-3-6"><span class="nav-number">2.4.</span> <span class="nav-text">3.5-3.6</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-x阶段"><span class="nav-number">2.5.</span> <span class="nav-text">4.x阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-x阶段"><span class="nav-number">2.6.</span> <span class="nav-text">5.x阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-x阶段"><span class="nav-number">2.7.</span> <span class="nav-text">6.x阶段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-circle"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">肖香龙</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shawshannon24"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>

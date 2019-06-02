@@ -1,0 +1,1089 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="产品设计,产品分析,知乎日报," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;这是一篇对知乎日报app的分析练习文章。知乎日报应该是我除了微信，qq等社交类应用之外，用的时间最长的应用了，也是最喜欢的。本文从当前移动资讯类行业现状，知乎日报的定位，用户，评价，功能，一直以来的发展方向，swot等方面进行分析，如果有人可到的话，希望这篇文章可以抛砖引玉。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="知乎日报体验分析">
+<meta property="og:url" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/index.html">
+<meta property="og:site_name" content="Shannon.S' Blog">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;这是一篇对知乎日报app的分析练习文章。知乎日报应该是我除了微信，qq等社交类应用之外，用的时间最长的应用了，也是最喜欢的。本文从当前移动资讯类行业现状，知乎日报的定位，用户，评价，功能，一直以来的发展方向，swot等方面进行分析，如果有人可到的话，希望这篇文章可以抛砖引玉。">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/行业整体情况.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/用户养成使用习惯.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/行业用户使用场景.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/行业用户使用偏好.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/行业用户使用偏好2.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/行业用户对平台的优势认知.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/月活用户及领域内平均对比.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/月启动次数及领域内平均对比.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/月使用时长及领域内平均对比.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/用户的性别-年龄-消费水平表现.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/月活用户及领域内平均对比.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/用户地域分布.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/近一年分时启动次数.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/近一年分时活跃用户.png">
+<meta property="og:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/知乎日报和知乎用户重合分析.png">
+<meta property="og:updated_time" content="2017-04-10T04:02:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="知乎日报体验分析">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;这是一篇对知乎日报app的分析练习文章。知乎日报应该是我除了微信，qq等社交类应用之外，用的时间最长的应用了，也是最喜欢的。本文从当前移动资讯类行业现状，知乎日报的定位，用户，评价，功能，一直以来的发展方向，swot等方面进行分析，如果有人可到的话，希望这篇文章可以抛砖引玉。">
+<meta name="twitter:image" content="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/行业整体情况.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6394728721395222000',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/"/>
+
+
+
+
+
+  <title> 知乎日报体验分析 | Shannon.S' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?41fc030db57d5570dd22f78997dc4a7e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Shannon.S' Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">肖香龙的博客。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="肖香龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shannon.S' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                知乎日报体验分析
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-09T14:53:19+08:00">
+                2017-04-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品文档/" itemprop="url" rel="index">
+                    <span itemprop="name">产品文档</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品文档/体验分析/" itemprop="url" rel="index">
+                    <span itemprop="name">体验分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/09/知乎日报体验分析/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/09/知乎日报体验分析/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&ensp;&ensp;&ensp;&ensp;这是一篇对知乎日报app的分析练习文章。知乎日报应该是我除了微信，qq等社交类应用之外，用的时间最长的应用了，也是最喜欢的。本文从当前移动资讯类行业现状，知乎日报的定位，用户，评价，功能，一直以来的发展方向，swot等方面进行分析，如果有人可到的话，希望这篇文章可以抛砖引玉。<br><a id="more"></a></p>
+<h2 id="当前移动资讯类市场现状"><a href="#当前移动资讯类市场现状" class="headerlink" title="当前移动资讯类市场现状"></a>当前移动资讯类市场现状</h2><h3 id="用户互联网用户增速放缓，人口数量红利减弱"><a href="#用户互联网用户增速放缓，人口数量红利减弱" class="headerlink" title="用户互联网用户增速放缓，人口数量红利减弱"></a>用户互联网用户增速放缓，人口数量红利减弱</h3><p>&ensp;&ensp;&ensp;&ensp;近两年，移动互联网发展迅速，移动端网民和设备都保持了快速增长的态势，但现在增速已经放缓，继续增长的空间还有，但是增量已经大不如之前。<br><img src="/2017/04/09/知乎日报体验分析/行业整体情况.png" alt="行业整体情况[来源：今日头条的一个报告](http://www.199it.com/archives/559343.html)" title="行业整体情况[来源：今日头条的一个报告](http://www.199it.com/archives/559343.html)"></p>
+<h3 id="用户养成在移动端获取资讯习惯"><a href="#用户养成在移动端获取资讯习惯" class="headerlink" title="用户养成在移动端获取资讯习惯"></a>用户养成在移动端获取资讯习惯</h3><p>&ensp;&ensp;&ensp;&ensp;移动端的新闻资讯平台用户活跃度不断提升，在移动端通过app获取新闻资讯已经成为习惯和偏好。<br><img src="/2017/04/09/知乎日报体验分析/用户养成使用习惯.png" alt="移动行业增长稳定[来源：今日头条的一个报告](http://www.199it.com/archives/559343.html)" title="移动行业增长稳定[来源：今日头条的一个报告](http://www.199it.com/archives/559343.html)"></p>
+<h3 id="使用场景和偏好"><a href="#使用场景和偏好" class="headerlink" title="使用场景和偏好"></a>使用场景和偏好</h3><p>&ensp;&ensp;&ensp;&ensp;从使用场景来看，碎片化阅读明显，起床后，睡觉前，午休，上下班路上等，很符合移动端的特点。从偏好来看，更加偏好个性推荐和热点推送，希望体现了移动端用户及时方便获取信息和满足以我为中心心理的需求。<br><img src="/2017/04/09/知乎日报体验分析/行业用户使用场景.png" alt="使用场景[来源：艾瑞报告](http://www.iimedia.cn/48828.html)" title="使用场景[来源：艾瑞报告](http://www.iimedia.cn/48828.html)"><br><img src="/2017/04/09/知乎日报体验分析/行业用户使用偏好.png" alt="来源偏好[来源：艾瑞报告](http://www.iimedia.cn/48828.html)" title="来源偏好[来源：艾瑞报告](http://www.iimedia.cn/48828.html)"><br><img src="/2017/04/09/知乎日报体验分析/行业用户使用偏好2.png" alt="形式偏好[来源：艾瑞报告](http://www.iimedia.cn/48828.html)" title="形式偏好[来源：艾瑞报告](http://www.iimedia.cn/48828.html)"><br><img src="/2017/04/09/知乎日报体验分析/行业用户对平台的优势认知.png" alt="优势认知[来源：艾瑞报告](http://www.iimedia.cn/48828.html)" title="优势认知[来源：艾瑞报告](http://www.iimedia.cn/48828.html)"></p>
+<h3 id="市场热点"><a href="#市场热点" class="headerlink" title="市场热点"></a>市场热点</h3><ul>
+<li>内容为王，内容还是需求的基础</li>
+<li>个性化推荐趋势明显</li>
+<li>表现形式多种多样，文字，图片，直播，短视频，音频等</li>
+<li>垂直领域发展趋势明显</li>
+<li>各路资本扶持</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;在当今市场上垂直领域深耕、个性推荐、视频直播等成为趋势，各个大佬公司选定平台投钱支持的境况下，我想从知乎日报的定位，用户，功能，演变历史等角度分析下为什么知乎日报能够吸引用户，又面临哪些威胁和机遇。</p>
+<h2 id="知乎日报体验分析"><a href="#知乎日报体验分析" class="headerlink" title="知乎日报体验分析"></a>知乎日报体验分析</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>app：知乎日报<br>版本：2.6.2<br>OS：MIUI 8.2</p>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><p>&ensp;&ensp;&ensp;&ensp;根据知乎日报的slogan我们可以得到一些信息。</p>
+<ul>
+<li>每天三次，每次七分钟</li>
+<li>告别浮躁，重获阅读的愉悦</li>
+<li>每日提供高质量新闻资讯</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;黄继新曾经在为什么做知乎日报<a href="https://www.zhihu.com/question/21100396" target="_blank" rel="external">问题</a>下面回答希望将知乎做成中文互联网上最强大的高质量知识社区，而知乎日报作为知乎的延伸，希望能够将更多人的吸引到知乎中。<br>&ensp;&ensp;&ensp;&ensp;通过以上信息，我认为知乎日报是定位于满足于用户移动碎片化阅读需求，提供高质量综合性新闻资讯类高效阅读，降低信息过剩负担，服务于非知乎重度用户或者非知乎用户，降低其接触知乎优质内容门槛的应用。</p>
+<h3 id="app规模分析"><a href="#app规模分析" class="headerlink" title="app规模分析"></a>app规模分析</h3><p>&ensp;&ensp;&ensp;&ensp;以下数据来自易观千帆，数据取自2016年10,11,12三个月。(我认为数据是有点旧了……)<br>&ensp;&ensp;&ensp;&ensp;这三个月的月活跃用户总体数量稳定，高于领域平均值，但是领域平均值在不断提高，这说明在整体大环境下其实知乎日报的表现是退步的，另外两个指标更能说明这个问题，在月启动次数和使用时长上面，知乎日报呈现了下降趋势，而行业平均值呈现的是一个上升趋势。在知乎日报并没有方向性改变的情况下，我认为是各资讯平台在个性化推荐，短视频，垂直领域等方向的不断发展，越来越受用户青睐，从而带走了一部分原来属于知乎日报的时间，使得知乎日报的使用时长和启动次数变少。用户的选择正在变得越来越多，使用习惯在慢慢变化。<br><img src="/2017/04/09/知乎日报体验分析/月活用户及领域内平均对比.png" alt="月活用户及领域内平均对比" title="月活用户及领域内平均对比"><br><img src="/2017/04/09/知乎日报体验分析/月启动次数及领域内平均对比.png" alt="月启动次数及领域内平均对比" title="月启动次数及领域内平均对比"><br><img src="/2017/04/09/知乎日报体验分析/月使用时长及领域内平均对比.png" alt="月使用时长及领域内平均对比" title="月使用时长及领域内平均对比"></p>
+<h3 id="用户及使用表现"><a href="#用户及使用表现" class="headerlink" title="用户及使用表现"></a>用户及使用表现</h3><p>&ensp;&ensp;&ensp;&ensp;知乎日报的用户性别分布较为平均，总体来说男性多一些；在年龄上分布也比较平均，有意思的是24岁以下和40岁以上的人群占比是两个最多的年龄段，而中间年龄段占比比较平均，都在10%以上，我认为这和24岁以下集中为大学生和40岁以上阶段跨度大有关。从地域和消费水平来看，其用户大都分布在大中城市，消费能力以中等中高中低为主，这两者也都是相互体现。<br>&ensp;&ensp;&ensp;&ensp;在分时活跃用户和启动次数等分时指标上面，除了在0点到7点之间的晚上休息时间，其余分布比较均匀，这根知乎日报的内同发布时间吻合，明显的碎片化分布。<br><img src="/2017/04/09/知乎日报体验分析/用户的性别-年龄-消费水平表现.png" alt="用户的性别-年龄-消费水平表现(来源：易观千帆)" title="用户的性别-年龄-消费水平表现(来源：易观千帆)"><br><img src="/2017/04/09/知乎日报体验分析/月活用户及领域内平均对比.png" alt="月活用户及领域内平均对比" title="月活用户及领域内平均对比"><br><img src="/2017/04/09/知乎日报体验分析/用户地域分布.png" alt="用户地域分布(来源：易观千帆)" title="用户地域分布(来源：易观千帆)"><br><img src="/2017/04/09/知乎日报体验分析/近一年分时启动次数.png" alt="近一年分时启动次数(来源：易观千帆)" title="近一年分时启动次数(来源：易观千帆)"><br><img src="/2017/04/09/知乎日报体验分析/近一年分时活跃用户.png" alt="近一年分时活跃用户(来源：易观千帆)" title="近一年分时活跃用户(来源：易观千帆)"></p>
+<p>&ensp;&ensp;&ensp;&ensp;综上，知乎日报用户分布在大中城市，有着不错消费能力，学历较高，有着碎片化阅读时间分布，不想花费大量时间查找信息，对阅读质量要求较高，所以我设想出以下比较典型的用户角色：</p>
+<ul>
+<li>小a，男/女，某高校学生，了解/未了解知乎，利用知乎日报发现知乎的精彩答案，并接受时事热点的分析，想要扩展自己知识面，也喜欢知乎日报中的深夜食堂/小事,大误等专题。</li>
+<li>小b，大中城市白领，25-35岁，平时工作日节奏稳定，没有太长时间花费在感兴趣资讯查找上，阅读时间呈现碎片化分布，在通勤时间段和上班休息中有阅读需求，希望获取高质量综合资讯及热点的专业分析。</li>
+<li>老c，40-50岁，已经成为管理层，平时工作繁忙，没有大块时间去发掘查找资讯，阅读时间碎片化分布，想要看到专业的解析和热点的跟踪。</li>
+<li>老d，50岁以上，退休或临近退休，对互联网接触少，知乎日报是其获取高质量信息，热点分析的有效渠道，降低了其获取高质量信息的难度和成本。</li>
+</ul>
+<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>截取了部分更新日志（在appannie上安卓的资料不全，故这里是app store的日志）<br>版本 1.3 (2013年6月19日)<br>新增：</p>
+<ul>
+<li>分享至腾讯微博和 Evernote</li>
+<li>生成长微博功能</li>
+<li>离线下载</li>
+<li>无图模式（节省流量）</li>
+<li>大字号模式</li>
+<li>查看大图</li>
+<li>支持 VoiceOver（方便盲人用户阅读）</li>
+<li>应用推荐</li>
+</ul>
+<p>版本 1.4.2 (2013年8月28日)</p>
+<ul>
+<li>支持新浪、腾讯微博登录，评论+收藏 </li>
+<li>首页区分已读 / 未读</li>
+<li>优化页面右划动画效果</li>
+<li>新增上拉载入下一篇功能</li>
+<li>设置中新增用户反馈通道 </li>
+<li>查看知乎讨论调用知乎客户端 </li>
+<li>优化分享功能，新增 QQ、Pocket、Readability</li>
+</ul>
+<p>版本 1.7.0 (2014年1月6日)</p>
+<ul>
+<li>支持分享到豆瓣广播</li>
+<li>支持快速预览查看文章内图片</li>
+<li>评论区支持夜间模式</li>
+<li>修正上下滚动偶尔失效</li>
+<li>增加手工清除缓存按钮</li>
+</ul>
+<p>版本 2.1 (2014年6月22日)</p>
+<ul>
+<li>全新的主题日报界面</li>
+<li>恢复瞎扯、深夜食堂等栏目入口</li>
+<li>优化了 2G 网络下的加载速度</li>
+<li>修复了阅读文章时有可能跳到顶部的 bug</li>
+<li>修复了 iOS 5 主题界面的 crash</li>
+<li>重新设计抽屉界面</li>
+<li>增加主编个人介绍</li>
+<li>主题订阅界面优化</li>
+<li>文章版式调整</li>
+</ul>
+<p>版本 2.5 (2015年1月16日)</p>
+<ol>
+<li>首页更多来自用户推荐的内容</li>
+<li>支持展示多位文章推荐者（推荐功能暂时对部分用户开放）</li>
+<li><p>冷酷吐槽与温暖鼓励请寄 mua@zhihu.com</p>
+<p>展开备注<br>版本 2.4.1 (2014年11月18日)<br>知乎日报来到了 2.4.1 版本~一起来看看有哪些更新：</p>
+</li>
+<li><p>网络加载优化，使用小秘诀：出门前 WiFi 离线一下，地铁里也能看日报！ </p>
+</li>
+<li>日报主编列表优化，内容更突出；</li>
+<li>增加多图标记，流量壕请随意；</li>
+<li>侧边栏增加精彩活动，惊喜等你来发现；</li>
+<li>喜欢请好评，不喜欢就告诉 mua@zhihu.com！</li>
+</ol>
+<p>版本 2.6 (2016年5月3日)<br>新增功能：</p>
+<ul>
+<li>支持知乎帐号登录</li>
+</ul>
+<p>修复优化：</p>
+<ul>
+<li>移动网络不下载图片失效</li>
+<li>新浪微博登录与分享失败</li>
+<li>从收藏文章页退至上次浏览位置</li>
+<li>移除评论文章时同步分享至微博</li>
+<li>移除绑定新浪微博或腾讯微博</li>
+</ul>
+<p>其中知乎日报知乎账号登录功能并没有保留下去。<br>可以看到，知乎日报一直都在致力于促进移动的碎片化阅读和增强用户的沟通的交流，鼓励其评论和分享，并且呈现出更丰富多彩的内容，符合大众需求。</p>
+<h3 id="功能和特色分析"><a href="#功能和特色分析" class="headerlink" title="功能和特色分析"></a>功能和特色分析</h3><p>功能分析：</p>
+<ul>
+<li>阅读：离线下载，阅读模式选择，收藏，分主题阅读，配合知乎活动等</li>
+<li>交流方面：点赞，评论，查看长评，微博登录，分享，消息接收，意见反馈等</li>
+</ul>
+<p>特色：</p>
+<ul>
+<li>每天7:00-22:00整点更新固定篇数，看完自己想看的就可以走，不会有信息过剩的心理负担</li>
+<li>来源于知乎日报高质量内容，会和热点联系在一起，有专业分析和评论</li>
+<li>分为多个主题，可以再主题下查看</li>
+<li>提供通向知乎和读读日报入口</li>
+</ul>
+<p>满足需求：</p>
+<ul>
+<li>基本需求：综合资讯碎片化阅读的需求；</li>
+<li>期望需求：获取高质量资讯，扩展知识面的需求；评论，点赞等交流需求；结合时事热点和知乎活动；</li>
+<li>兴奋需求：降低了高质量信息获取门槛和成本，减轻了信息负担，愉快阅读；</li>
+</ul>
+<p>&ensp;&ensp;&ensp;&ensp;我认为碎片化，移动阅读，交流功能等满足了当今的移动碎片化趋势，相比于现在的内容参差不齐普遍质量较差、内容太多太杂看不过来的新闻资讯平台，知乎日报可以提供高质量资讯，信息负担小，看完即走的阅读体验，适合于前面提到的用户特征需求，这也是知乎日报可以获得用户喜欢的原因。<br>&ensp;&ensp;&ensp;&ensp;另外一个点上，对于知乎日报自己的需求中有一条是希望可以起到推广知乎的作用，有一个数据展示了两者的重合用户，如下图。可以看到两者的重合用户也并不是知乎日报主要的，也不是知乎主要部分，在没有证明存在大量存在两者中通过一个app了解另外一个之后弃用了前者的情况下，我认为并没有达到知乎日报一开始为知乎做推广的目的。<br><img src="/2017/04/09/知乎日报体验分析/知乎日报和知乎用户重合分析.png" alt="知乎日报和知乎用户重合分析(来源：易观千帆)" title="知乎日报和知乎用户重合分析(来源：易观千帆)"></p>
+<h3 id="swot分析"><a href="#swot分析" class="headerlink" title="swot分析"></a>swot分析</h3><ul>
+<li>优势：基于知乎社区，有大量优质内容；用户粘性较高；</li>
+<li>劣势：在大环境下缺少巨头支持，缺乏更有效的传播途径；</li>
+<li>机遇：移动互联网技术进步，用户移动碎片化阅读习惯养成，知乎社区日益壮大；</li>
+<li>危机：垂直领域深耕，个性化推荐，视频等趋势日志壮大的情况下，知乎日报面临着现有对手以及未来更多对手的竞争；</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>&ensp;&ensp;&ensp;&ensp;我认为知乎日报定位明确，主打高质量低消耗（信息负担低）的移动综合资讯阅读，面向目标人群比较明确，特色清晰。虽然没有实现 其为知乎导流的目的，但是满足了用户的阅读需求，用户的忠诚度和粘性较高，虽然现在面临众多个性化推荐，短视频，直播等平台的竞争，但我认为这反而明确了知乎日报的特色和用户。如果我是其产品经理，我会继续沿着这个方向，并且完善用户阅读体验，如检索功能，书签功能，并针对以往阅读记录对相关推送信息重点标注功能等，完善与知乎之间的联系，促进支护用户对知乎日报的内容贡献，促进知乎日报到知乎的用户转化</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/产品设计/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/产品分析/" rel="tag"># 产品分析</a>
+          
+            <a href="/tags/知乎日报/" rel="tag"># 知乎日报</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/09/《用户体验要素》回顾/" rel="next" title="《用户体验要素》回顾">
+                <i class="fa fa-chevron-left"></i> 《用户体验要素》回顾
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/15/从版本更新看微信发展历史/" rel="prev" title="从版本更新看微信发展历史">
+                从版本更新看微信发展历史 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/09/知乎日报体验分析/"
+           data-title="知乎日报体验分析" data-url="http://shawshannon24.github.io/2017/04/09/知乎日报体验分析/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="肖香龙" />
+          <p class="site-author-name" itemprop="name">肖香龙</p>
+           
+              <p class="site-description motion-element" itemprop="description">我的征途是星辰大海。能安稳闲乐更好。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#当前移动资讯类市场现状"><span class="nav-number">1.</span> <span class="nav-text">当前移动资讯类市场现状</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户互联网用户增速放缓，人口数量红利减弱"><span class="nav-number">1.1.</span> <span class="nav-text">用户互联网用户增速放缓，人口数量红利减弱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户养成在移动端获取资讯习惯"><span class="nav-number">1.2.</span> <span class="nav-text">用户养成在移动端获取资讯习惯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景和偏好"><span class="nav-number">1.3.</span> <span class="nav-text">使用场景和偏好</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#市场热点"><span class="nav-number">1.4.</span> <span class="nav-text">市场热点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知乎日报体验分析"><span class="nav-number">2.</span> <span class="nav-text">知乎日报体验分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">2.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位"><span class="nav-number">2.2.</span> <span class="nav-text">定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#app规模分析"><span class="nav-number">2.3.</span> <span class="nav-text">app规模分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户及使用表现"><span class="nav-number">2.4.</span> <span class="nav-text">用户及使用表现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新日志"><span class="nav-number">2.5.</span> <span class="nav-text">更新日志</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能和特色分析"><span class="nav-number">2.6.</span> <span class="nav-text">功能和特色分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#swot分析"><span class="nav-number">2.7.</span> <span class="nav-text">swot分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-circle"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">肖香龙</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shawshannon24"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>

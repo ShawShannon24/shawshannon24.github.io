@@ -1,0 +1,974 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="spss,统计," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="spss统计分析方法及应用中记录的统计分析方法的简单回顾。不涉及数学定义。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spss统计知识回顾">
+<meta property="og:url" content="http://shawshannon24.github.io/2017/03/13/spss统计知识回顾1/index.html">
+<meta property="og:site_name" content="Shannon.S' Blog">
+<meta property="og:description" content="spss统计分析方法及应用中记录的统计分析方法的简单回顾。不涉及数学定义。">
+<meta property="og:updated_time" content="2017-03-30T16:05:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="spss统计知识回顾">
+<meta name="twitter:description" content="spss统计分析方法及应用中记录的统计分析方法的简单回顾。不涉及数学定义。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6394728721395222000',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shawshannon24.github.io/2017/03/13/spss统计知识回顾1/"/>
+
+
+
+
+
+  <title> spss统计知识回顾 | Shannon.S' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?41fc030db57d5570dd22f78997dc4a7e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Shannon.S' Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">肖香龙的博客。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://shawshannon24.github.io/2017/03/13/spss统计知识回顾1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="肖香龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shannon.S' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                spss统计知识回顾
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-13T12:59:20+08:00">
+                2017-03-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习回顾/" itemprop="url" rel="index">
+                    <span itemprop="name">学习回顾</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习回顾/统计-分析/" itemprop="url" rel="index">
+                    <span itemprop="name">统计&分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/13/spss统计知识回顾1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/13/spss统计知识回顾1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>spss统计分析方法及应用中记录的统计分析方法的简单回顾。不涉及数学定义。<br><a id="more"></a><br>&ensp;&ensp;去年自己将概率论大概过了一遍，最近在看spss统计分析方法及应用，虽然数学定义原理我还是不懂，但是不能将这些基本的统计的方法和定义看了就忘记，写下来过一遍。</p>
+<h2 id="数据的计量尺度"><a href="#数据的计量尺度" class="headerlink" title="数据的计量尺度"></a>数据的计量尺度</h2><p>统计学依据数据的计量尺度将数据划分为三大类型：<br>&ensp;&ensp;- 定距型数据，一般的表示一个变量的连续型数据和离散型数据；<br>&ensp;&ensp;- 定序型数据，内在固有大小或者高低顺序，但是不同于定距型数据，一般可以用字符或者数字来表示，比如高中低用分别用123来表示；<br>&ensp;&ensp;- 定类型数据，没有内在大小或者高低顺序，一般以字符或者数值表示的分类数据，比如男女用12分别表示；</p>
+<h2 id="spss的数据文件合并"><a href="#spss的数据文件合并" class="headerlink" title="spss的数据文件合并"></a>spss的数据文件合并</h2><p>spss可以将不同的数据文件进行纵向和横向合并：<br>&ensp;&ensp;- 纵向合并是在一个文件上面添加新的case,注意1 合并数据应该有关系，2 变量名和数据类型最好能设置一样，方便；<br>&ensp;&ensp;- 横向合并是在一个文件上面添加新的属性，注意1 至少有一个相同的变量，2 不同的变量名字应该不一样，3 两个表之前应该按照关键变量进行了升序排序；</p>
+<h2 id="spss的预处理"><a href="#spss的预处理" class="headerlink" title="spss的预处理"></a>spss的预处理</h2><p>包括以下：<br>&ensp;&ensp;数据排序；变量计算；数据选取；计数；分类汇总；数据分组；数据转置；加权处理；数据拆分；定义用户变量集等。这些都在data和transform的菜单下</p>
+<h2 id="spss基本统计分析"><a href="#spss基本统计分析" class="headerlink" title="spss基本统计分析"></a>spss基本统计分析</h2><p>包括以下：</p>
+<ul>
+<li>频数分析；</li>
+<li>计算基本描述统计量。基本描述统计量包括：1，刻画集中趋势的描述统计量，如均值；2，刻画离散趋势的描述统计量，如样本标准差，样本方差，全距；2，刻画分布形态的描述统计量，偏度（偏度为0，总偏差相等，为正，正偏差，直方图右边有长尾），峰度（和标准正态分布作比较，为0，则和标准正态分布相同陡缓程度，大于0，则更陡峭，小于0，则更平缓）；</li>
+<li>交叉分组下频数分析</li>
+<li>多选项分析，两种方法，1，多选项二分法，将多选项每一个值设为一个变量，变量值为选择和不选择，2，多选项分类法，估计最多可能出现的答案个数，设置相应数量变量，没达到此数量的，后面的按照缺失值处理；</li>
+<li>比率分析</li>
+</ul>
+<h2 id="spss的参数检验"><a href="#spss的参数检验" class="headerlink" title="spss的参数检验"></a>spss的参数检验</h2><p>参数检验是统计推断重要组成部分，统计推断是根据样本数据推断总体特征的方法。<br>两种情况：</p>
+<ul>
+<li>当总体分布已知，根据样本数据对总体分布的统计参数进行推断，如均值，方差等。是为了估计参数的趋势是否与某个值具有明显差异。此时为参数检验的方法。</li>
+<li>当总体分布未知的情况下，根据样本数据对总体得分布形式或则会特征进行推断。判断是否与预期的分布有显著差异。此时采用非参数检验的方法。<h3 id="假设检验"><a href="#假设检验" class="headerlink" title="假设检验"></a>假设检验</h3>对总体参数值提出假设，利用样本提供的信息去检验之前提出的假设是否成立。<br>步骤如下：</li>
+<li>提出零假设。根据推断检验的目标，对待推断的总体参数或者分布提出一个假设H0，这个假设基本上是……符合……分布，或者……和XX没有显著差异。</li>
+<li>选择检验统计量。假设检验中，样本值或者更极端值发生的概率并不直接由样本数据得到，而是通过计算检验统计量观测值发生的概率间接得到。</li>
+<li>计算检验统计量观测值发生的概率。用P来表示。即该统计量在假设H0成立的情况下取特定极端值的概率。</li>
+<li>给出显著性水平a（并不写希腊字母），这是指零假设正确却被拒绝了的风险。一般人认为应该为0.05或者0.01。小概率原理认为一个极小概率的事件一般认为不会发生。放在这里，即统计量的极端值概率和显著性的比较，如果小于a，那么这个极端值取值明显为小概率事件，一般认为不发生，但是他在零假设成立的情况下发生了，则我们应该拒绝零假设；反之大于a，则说明在零假设成立的情况下统计量取极端值的概率没那么小，发生时正常的，那么可以接受零假设。</li>
+</ul>
+<p>spss会在我们选好检验的方法，变量和其他条件之后，将这些算好给我们看。<br>分析下面菜单下的compare means</p>
+<h3 id="单样本t检验"><a href="#单样本t检验" class="headerlink" title="单样本t检验"></a>单样本t检验</h3><p>单样本t检验用来自总体的样本数据推断总体的均值是否和指定的检验值在统计上的差异是否显著。由于方法涉及到的是单个总体，所以称为单样本t检验。</p>
+<h3 id="两独立样本t检验"><a href="#两独立样本t检验" class="headerlink" title="两独立样本t检验"></a>两独立样本t检验</h3><p>利用来自两个总体的独立样本，推断两个总体的均值是否存在显著差异。</p>
+<h3 id="两配对样本t检验"><a href="#两配对样本t检验" class="headerlink" title="两配对样本t检验"></a>两配对样本t检验</h3><p>利用来自两个总体的配对样本，推断两个总体的均值是否存在显著差异。所谓配对样本即为个案在“前后”两种状态下某属性的两种不同特征，也可以是对某事物两个不同的侧面或者方面的描述。例如测定某减肥茶效果，看同样人群在喝前后的数据。</p>
+<p>&ensp;&ensp;下一篇继续。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/spss/" rel="tag"># spss</a>
+          
+            <a href="/tags/统计/" rel="tag"># 统计</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/11/我的hexo建站/" rel="next" title="我的hexo建站">
+                <i class="fa fa-chevron-left"></i> 我的hexo建站
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/16/spss统计知识回顾2/" rel="prev" title="spss统计知识回顾2">
+                spss统计知识回顾2 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/13/spss统计知识回顾1/"
+           data-title="spss统计知识回顾" data-url="http://shawshannon24.github.io/2017/03/13/spss统计知识回顾1/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="肖香龙" />
+          <p class="site-author-name" itemprop="name">肖香龙</p>
+           
+              <p class="site-description motion-element" itemprop="description">我的征途是星辰大海。能安稳闲乐更好。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的计量尺度"><span class="nav-number">1.</span> <span class="nav-text">数据的计量尺度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spss的数据文件合并"><span class="nav-number">2.</span> <span class="nav-text">spss的数据文件合并</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spss的预处理"><span class="nav-number">3.</span> <span class="nav-text">spss的预处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spss基本统计分析"><span class="nav-number">4.</span> <span class="nav-text">spss基本统计分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spss的参数检验"><span class="nav-number">5.</span> <span class="nav-text">spss的参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假设检验"><span class="nav-number">5.1.</span> <span class="nav-text">假设检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单样本t检验"><span class="nav-number">5.2.</span> <span class="nav-text">单样本t检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两独立样本t检验"><span class="nav-number">5.3.</span> <span class="nav-text">两独立样本t检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两配对样本t检验"><span class="nav-number">5.4.</span> <span class="nav-text">两配对样本t检验</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-circle"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">肖香龙</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shawshannon24"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>

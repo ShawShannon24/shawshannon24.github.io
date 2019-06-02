@@ -1,0 +1,1009 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="spss,统计," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="这一篇接着spss统计知识回顾2，回顾后续章节。上一篇回顾了方差分析。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spss统计知识回顾3">
+<meta property="og:url" content="http://shawshannon24.github.io/2017/03/18/spss统计知识回顾3/index.html">
+<meta property="og:site_name" content="Shannon.S' Blog">
+<meta property="og:description" content="这一篇接着spss统计知识回顾2，回顾后续章节。上一篇回顾了方差分析。">
+<meta property="og:updated_time" content="2017-03-18T09:10:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="spss统计知识回顾3">
+<meta name="twitter:description" content="这一篇接着spss统计知识回顾2，回顾后续章节。上一篇回顾了方差分析。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6394728721395222000',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://shawshannon24.github.io/2017/03/18/spss统计知识回顾3/"/>
+
+
+
+
+
+  <title> spss统计知识回顾3 | Shannon.S' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?41fc030db57d5570dd22f78997dc4a7e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Shannon.S' Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">肖香龙的博客。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://shawshannon24.github.io/2017/03/18/spss统计知识回顾3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="肖香龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shannon.S' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                spss统计知识回顾3
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-18T14:57:53+08:00">
+                2017-03-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习回顾/" itemprop="url" rel="index">
+                    <span itemprop="name">学习回顾</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习回顾/统计-分析/" itemprop="url" rel="index">
+                    <span itemprop="name">统计&分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/18/spss统计知识回顾3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/18/spss统计知识回顾3/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这一篇接着spss统计知识回顾2，回顾后续章节。<a href="https://shawshannon24.github.io/2017/03/16/spss%E7%BB%9F%E8%AE%A1%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE2/">上一篇</a>回顾了方差分析。<br><a id="more"></a></p>
+<h2 id="spss的非参数检验"><a href="#spss的非参数检验" class="headerlink" title="spss的非参数检验"></a>spss的非参数检验</h2><p>&ensp;&ensp;&ensp;&ensp;非参数检验是针对参数检验来讲的。参数检验是在总体分布已知的情况下，对总体分布的参数如均值，方差等进行推断的方法。在实际上，人们往往无法对总体分布做出简单假设，此时就不能用参数检验了。非参数检验方法在总体分布位置或者知道很少的情况下，利用样本分布对总体分布进行推断。推断过程中不涉及到有关总体分布的参数，因此成为非参数检验。</p>
+<h3 id="单样本非参数检验"><a href="#单样本非参数检验" class="headerlink" title="单样本非参数检验"></a>单样本非参数检验</h3><p>&ensp;&ensp;&ensp;&ensp;得到一批样本数据之后，往往希望了解样本来自的总体的分布是否与已知的理论相符。可以利用非参数检验的方法来实现。spss单样本非参数检验是对单个总体的分布进行推断分方法，其中包括卡方检验，二项分布检验，K-S检验以及变量值随机性检验。</p>
+<h4 id="总体分布的卡方检验"><a href="#总体分布的卡方检验" class="headerlink" title="总体分布的卡方检验"></a>总体分布的卡方检验</h4><p>&ensp;&ensp;&ensp;&ensp;卡方检验方法可以根据样本数据，推断总体分布与期望分布或某一理论分布是否存在显著差异，是一种吻合性检验。通常适用于有多项分类值的总体分布的分析。它的零假设是样本来自的总体分布与期望分布或者某一理论分布无明显差异。<br>步骤：</p>
+<ul>
+<li>菜单：Analyse-Nonparametrics Tests-Chi-Square</li>
+<li>选择待检验变量到Test Variable List框中</li>
+<li>在expected range框中指定要分析的cases</li>
+<li>在Expected Values框中给出各个Pi值，即指定期望分布。</li>
+</ul>
+<p>举例：比如推断在一周七天内开花的数量，推断一周内开花的分布，推断在周几容易开花</p>
+<h4 id="二项分布检验"><a href="#二项分布检验" class="headerlink" title="二项分布检验"></a>二项分布检验</h4><p>&ensp;&ensp;&ensp;&ensp;针对二值分类问题。如男女，正反等。spss的二项分布检验正是要通过样本数据检验样本来自的总体是否服从制定概率为P的二项分布，零假设是样本来自的总体与指定的二项分布无显著差异。<br>步骤：</p>
+<ul>
+<li>选择非参数检验下的Binomial</li>
+<li>选择待检验变量</li>
+<li>在define dichotomy框中制定如何分类。如果变量是二值变量，<br>默认就行了，如果不是则在cut point中指定具体数值，小于等于该观察值的为成功；</li>
+<li>test框中输入二项分布的检验概率值。</li>
+</ul>
+<p>举例：检验一批产品的良品率是否在90%以上。</p>
+<h4 id="单样本K-S检验"><a href="#单样本K-S检验" class="headerlink" title="单样本K-S检验"></a>单样本K-S检验</h4><p>该方法能够利用样本数据推断样本来自的总体是否与某一理论分布有显著差异，是一种拟合优度的检验方法，适用于探索连续性随机变量的分布。零假设是样本来自的总体与指定的理论分布无显著差异，spss中的理论分布主要包括正态分布，均匀分布，指数分布和泊松分布等。<br>步骤：</p>
+<ul>
+<li>在非参数检验中选择1-sample K-S</li>
+<li>选择待检验变量</li>
+<li>在test distribution中选择理论分布，normal正态分布，uniform均匀分布，poisson泊松分布，exponential指数分布。</li>
+</ul>
+<p>举例：如检验周岁儿童的身高分布是否符合正态分布。</p>
+<h4 id="变量随机性检验"><a href="#变量随机性检验" class="headerlink" title="变量随机性检验"></a>变量随机性检验</h4><p>&ensp;&ensp;&ensp;&ensp;抛硬币时出现0,1当做正反，得到0,1组成变量值序列，这时可能分析抛硬币出现结果是不是随机的问题。变量随机性检验正是解决的方法，零假设是总体中变量值出现是随机的。<br>步骤：</p>
+<ul>
+<li>非参数检验中选择runs</li>
+<li>选择待检验变量</li>
+<li>cut point中确定计算有成熟的分界值。</li>
+</ul>
+<h3 id="两独立样本的非参数检验"><a href="#两独立样本的非参数检验" class="headerlink" title="两独立样本的非参数检验"></a>两独立样本的非参数检验</h3><p>&ensp;&ensp;&ensp;&ensp;在对总体分布不了解的情况下，通过对两组独立样本的分析来判断来自两个总体的分布是否具有明显的差异。</p>
+<h4 id="两独立样本的曼–惠特尼u检验"><a href="#两独立样本的曼–惠特尼u检验" class="headerlink" title="两独立样本的曼–惠特尼u检验-"></a>两独立样本的曼–惠特尼u检验-</h4><p>&ensp;&ensp;&ensp;&ensp;零假设是两组独立样本来自的总体分布没有显著差异。</p>
+<h4 id="两独立样本的K–S检验"><a href="#两独立样本的K–S检验" class="headerlink" title="两独立样本的K–S检验"></a>两独立样本的K–S检验</h4><p>&ensp;&ensp;&ensp;&ensp;零假设是两组独立样本来自的总体分布没有显著差异。与前面讲的单样本的K-S检验的差别在这里以变量值的秩（排序）作为分析对象，而不是变量值本身。</p>
+<ul>
+<li>首先，将两组样本混合并按生序排序</li>
+<li>分别计算两组样本秩的累计频数和累计频率</li>
+<li>最后计算两组累计频率的差，得到秩的差值序列并得到D统计量。</li>
+</ul>
+<h4 id="极端反应检验"><a href="#极端反应检验" class="headerlink" title="极端反应检验"></a>极端反应检验</h4><p>&ensp;&ensp;&ensp;&ensp;零假设还是两总体分布无显著差异。将一组样本作为控制样本，另一组为试验样本，以控制样本作为对照，检验试验样本对于控制样本是否出现了极端反应。没有出现，则接受零假设。</p>
+<h3 id="多独立样本的非参数检验"><a href="#多独立样本的非参数检验" class="headerlink" title="多独立样本的非参数检验"></a>多独立样本的非参数检验</h3><p>&ensp;&ensp;&ensp;&ensp;通过分析多组独立样本数据，推断样本来自的多个总体的中位数或分布是否存在显著差异。</p>
+<h4 id="中位数检验"><a href="#中位数检验" class="headerlink" title="中位数检验"></a>中位数检验</h4><p>&ensp;&ensp;&ensp;&ensp;零假设是多个独立样本来自的多个总体的中位数无显著差异。<br>步骤：</p>
+<ul>
+<li>多组样本混合升序排序，并求出混合样本的中位数</li>
+<li>分别计算各组样本中大于和小于上述中位数的样本个数</li>
+<li>利用卡方检验方法分析各组样本来自的总体对于上述中位数的分布是否一致。如果各组样本大于或者小于上述中位数的比例大致相同，则认为分布无显著差异。</li>
+</ul>
+<h4 id="多独立样本的Krushkal-Wallis检验"><a href="#多独立样本的Krushkal-Wallis检验" class="headerlink" title="多独立样本的Krushkal-Wallis检验"></a>多独立样本的Krushkal-Wallis检验</h4><p>&ensp;&ensp;&ensp;&ensp;零假设是多个独立样本来自的多个总体的分布无显著差异。<br>步骤：</p>
+<ul>
+<li>将多组样本数据混合按升序排序，求出各变量值的秩</li>
+<li>考察各组秩的均值是否存在显著差异，存在的话不接受零假设</li>
+</ul>
+<h4 id="多独立样本的Jonckeere–Terpstra检验"><a href="#多独立样本的Jonckeere–Terpstra检验" class="headerlink" title="多独立样本的Jonckeere–Terpstra检验"></a>多独立样本的Jonckeere–Terpstra检验</h4><h3 id="两配对样本的非参数检验"><a href="#两配对样本的非参数检验" class="headerlink" title="两配对样本的非参数检验"></a>两配对样本的非参数检验</h3><h4 id="McNemar检验"><a href="#McNemar检验" class="headerlink" title="McNemar检验"></a>McNemar检验</h4><p>&ensp;&ensp;&ensp;&ensp;零假设是来自两配对样本的两总体分布无显著差异。采用二项分布的检验方法。即比  较一件事情在变化前后的变化是二项值，例如好或者不好。</p>
+<h4 id="符号检验"><a href="#符号检验" class="headerlink" title="符号检验"></a>符号检验</h4><h4 id="Wilconxon符号检验"><a href="#Wilconxon符号检验" class="headerlink" title="Wilconxon符号检验"></a>Wilconxon符号检验</h4><p>两配对样本非参数检验操作：</p>
+<ul>
+<li>选择非参数检验下的2Paired Samples</li>
+<li>选择待检验的两配对变量</li>
+<li>test type中选择检验方法</li>
+</ul>
+<h3 id="多配对样本的非参数检验"><a href="#多配对样本的非参数检验" class="headerlink" title="多配对样本的非参数检验"></a>多配对样本的非参数检验</h3><p>&ensp;&ensp;&ensp;&ensp;通过分析多组配对样本数据，推断样本来自的多个总体的中位数或者分布是否存在显著差异。<br>例如收集不同销售形式下的若干种商品的销售数据，比较不同销售形势的效果。</p>
+<h4 id="Friedman检验-Cochran-Q检验-Kendall检验"><a href="#Friedman检验-Cochran-Q检验-Kendall检验" class="headerlink" title="Friedman检验  Cochran Q检验  Kendall检验"></a>Friedman检验  Cochran Q检验  Kendall检验</h4>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/spss/" rel="tag"># spss</a>
+          
+            <a href="/tags/统计/" rel="tag"># 统计</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/16/面试是把自己做成产品/" rel="next" title="面试时把自己做成产品">
+                <i class="fa fa-chevron-left"></i> 面试时把自己做成产品
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/22/2017-03以前项目总结1/" rel="prev" title="2017.03以前项目总结1">
+                2017.03以前项目总结1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/18/spss统计知识回顾3/"
+           data-title="spss统计知识回顾3" data-url="http://shawshannon24.github.io/2017/03/18/spss统计知识回顾3/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="肖香龙" />
+          <p class="site-author-name" itemprop="name">肖香龙</p>
+           
+              <p class="site-description motion-element" itemprop="description">我的征途是星辰大海。能安稳闲乐更好。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#spss的非参数检验"><span class="nav-number">1.</span> <span class="nav-text">spss的非参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单样本非参数检验"><span class="nav-number">1.1.</span> <span class="nav-text">单样本非参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#总体分布的卡方检验"><span class="nav-number">1.1.1.</span> <span class="nav-text">总体分布的卡方检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二项分布检验"><span class="nav-number">1.1.2.</span> <span class="nav-text">二项分布检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单样本K-S检验"><span class="nav-number">1.1.3.</span> <span class="nav-text">单样本K-S检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量随机性检验"><span class="nav-number">1.1.4.</span> <span class="nav-text">变量随机性检验</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两独立样本的非参数检验"><span class="nav-number">1.2.</span> <span class="nav-text">两独立样本的非参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#两独立样本的曼–惠特尼u检验"><span class="nav-number">1.2.1.</span> <span class="nav-text">两独立样本的曼–惠特尼u检验-</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两独立样本的K–S检验"><span class="nav-number">1.2.2.</span> <span class="nav-text">两独立样本的K–S检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极端反应检验"><span class="nav-number">1.2.3.</span> <span class="nav-text">极端反应检验</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多独立样本的非参数检验"><span class="nav-number">1.3.</span> <span class="nav-text">多独立样本的非参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#中位数检验"><span class="nav-number">1.3.1.</span> <span class="nav-text">中位数检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多独立样本的Krushkal-Wallis检验"><span class="nav-number">1.3.2.</span> <span class="nav-text">多独立样本的Krushkal-Wallis检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多独立样本的Jonckeere–Terpstra检验"><span class="nav-number">1.3.3.</span> <span class="nav-text">多独立样本的Jonckeere–Terpstra检验</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两配对样本的非参数检验"><span class="nav-number">1.4.</span> <span class="nav-text">两配对样本的非参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#McNemar检验"><span class="nav-number">1.4.1.</span> <span class="nav-text">McNemar检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#符号检验"><span class="nav-number">1.4.2.</span> <span class="nav-text">符号检验</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Wilconxon符号检验"><span class="nav-number">1.4.3.</span> <span class="nav-text">Wilconxon符号检验</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多配对样本的非参数检验"><span class="nav-number">1.5.</span> <span class="nav-text">多配对样本的非参数检验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Friedman检验-Cochran-Q检验-Kendall检验"><span class="nav-number">1.5.1.</span> <span class="nav-text">Friedman检验  Cochran Q检验  Kendall检验</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-circle"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">肖香龙</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shawshannon24"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
